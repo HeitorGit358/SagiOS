@@ -1,0 +1,49 @@
+# === SagiOS - Pacotes extras (KDE Plasma) ===
+# Estes pacotes são somados aos pacotes base do perfil "releng" do archiso.
+
+# Plasma Desktop (essenciais)
+plasma-desktop
+plasma-nm
+plasma-pa
+plasma-workspace
+kscreen
+powerdevil
+bluedevil
+sddm
+sddm-kcm
+
+# Apps essenciais do KDE
+dolphin
+konsole
+kate
+ark
+spectacle
+gwenview
+okular
+kcalc
+kdeplasma-addons
+kde-gtk-config
+breeze
+breeze-gtk
+kinfocenter
+partitionmanager
+
+# Rede / drivers / firmware (importante para hardware real)
+networkmanager
+network-manager-applet
+pipewire
+pipewire-pulse
+pipewire-alsa
+wpa_supplicant
+linux-firmware
+
+# Navegador e utilitários
+firefox
+nano
+vim
+git
+htop
+neofetch
+
+# Suporte a Calamares (instalador gráfico) - opcional mas recomendado
+calamares

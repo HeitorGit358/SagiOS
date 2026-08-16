@@ -1,0 +1,11 @@
+NAME="SagiOS"
+PRETTY_NAME="SagiOS"
+ID=sagios
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://example.org/sagios"
+DOCUMENTATION_URL="https://example.org/sagios/docs"
+SUPPORT_URL="https://example.org/sagios/support"
+BUG_REPORT_URL="https://example.org/sagios/issues"
+LOGO=sagios-logo
