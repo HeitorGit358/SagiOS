@@ -1,0 +1,37 @@
+name: Build SagiOS ISO
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "overlay/**"
+      - "build.sh"
+      - ".github/workflows/build-iso.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+      options: --privileged
+
+    steps:
+      - name: Preparar container (git + node p/ checkout)
+        run: |
+          pacman -Sy --noconfirm git nodejs base-devel
+
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Rodar build da ISO
+        run: |
+          chmod +x build.sh
+          ./build.sh
+
+      - name: Upload da ISO gerada
+        uses: actions/upload-artifact@v4
+        with:
+          name: sagios-iso
+          path: out/*.iso
+          retention-days: 14
